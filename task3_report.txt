@@ -1,0 +1,52 @@
+===========================
+TASK 3 REPORT – ADVANCED SECURITY & FINALIZATION
+===========================
+
+OBJECTIVE:
+To simulate basic penetration testing and enhance monitoring with logging and documentation for a secure Node.js web application.
+
+---------------------------
+STEP 1: PENETRATION TESTING
+---------------------------
+Tool: Nmap
+
+Command used:
+nmap -sV -p 3000 localhost
+
+Result:
+- Port 3000 detected as open
+- Application response verified
+- Security headers from Helmet detected in response
+- Screenshot captured for documentation
+
+---------------------------
+STEP 2: LOGGING WITH WINSTON
+---------------------------
+Tool: Winston logger
+
+- Installed Winston and configured console + file transport
+- Created `security.log` to record critical events
+- Logs include:
+  - App start
+  - Invalid inputs
+  - User logins
+- Log output confirmed using `cat security.log`
+- Screenshot captured
+
+---------------------------
+STEP 3: SECURITY CHECKLIST
+---------------------------
+File created: `security_checklist.txt`
+
+Included:
+- Input validation
+- Password hashing
+- JWT authentication
+- Secure headers
+- Logging
+- Testing verification
+- Final recommendations
+
+---------------------------
+STATUS: ✅ TASK 3 COMPLETED
+---------------------------
